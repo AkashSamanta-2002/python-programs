@@ -1,0 +1,2 @@
+Hello this is Akash and we are learning file handling in pythonNow we are appending from codeNow we are appending from code
+Now we are appending from code
