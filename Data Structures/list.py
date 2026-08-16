@@ -63,3 +63,12 @@ print(isinstance(d, dict))
 # str = "Akash"     # strings in python is immutable
 # str[0] = 'a'
 # print(str)
+
+"""
+l = [
+    {"name": "Akash"},
+    {"name": "Aditya"},
+]
+
+print(l.index({"name": "Aditya"}))
+"""

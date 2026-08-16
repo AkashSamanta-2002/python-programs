@@ -11,6 +11,7 @@ class Animal:
     @staticmethod
     def staticMethod():
         print("This is a static method")
+        print(Animal.name)
 
 
 Animal.getClassAttribute()
