@@ -22,7 +22,7 @@
 
 # print(list2)
 
-# list1[0] = 1000         # Hard copy 
+# list1[0] = 1000         # Deep copy 
 
 # print(list1, list2)
 
@@ -31,7 +31,7 @@
 
 # print(list2)
 
-# list1[0] = 1000         # shallow copy 
+# list1[0] = 1000         # Shallow copy 
 
 # print(list1, list2)
 
@@ -45,6 +45,7 @@
 
 # print(list1, list2)
 
+"""
 list1 = [1, [3, 4, 5, 6], 3]
 
 list2 = [
@@ -59,6 +60,7 @@ print(list2)
 
 d = {}
 print(isinstance(d, dict))
+"""
 
 # str = "Akash"     # strings in python is immutable
 # str[0] = 'a'
@@ -72,3 +74,25 @@ l = [
 
 print(l.index({"name": "Aditya"}))
 """
+"""
+l = [1,2,3,4,5,6,7,8,9]
+s = l[:4]
+# print(s)
+
+s[0] = 100
+print(s)
+print(l)
+"""
+
+l = [1,2,3,4,5,6,7,8,9]
+
+new_list = l        # Deep copy
+new_list = l[:]     # Shallow copy
+l[0] = 10
+
+# print(l, new_list)
+
+copy_list = l.copy()    # Shallow copy
+l[2] = 10
+print(copy_list)
+print(l)
